@@ -8,9 +8,12 @@
  * Copyright 2017, Codrops
  * http://www.codrops.com
  */
+
+
+
 ;(function(window) {
 
-	/**
+	/*
 	 * GridLoaderFx obj.
 	 */
 	function GridLoaderFx(el, options) {
@@ -18,7 +21,7 @@
 		this.items = this.el.querySelectorAll('.grid__item > .grid__link');
 	}
 	
-	/**
+	/*
 	 * Effects.
 	 */
 	GridLoaderFx.prototype.effects = {
@@ -497,6 +500,8 @@
 		loaders = [],
 		loadingTimeout;
 
+	
+	//window.addEventListener('DOMContentLoaded', (event) 
 	function init() {
 		// Preload images
 		imagesLoaded(body, function() {
@@ -522,7 +527,7 @@
 			// Remove loading class from body
 			body.classList.remove('loading');
 		});
-	}
+	};
 
 	function initEvents() {
 		// Switching grids radio buttons.
